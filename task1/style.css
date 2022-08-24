@@ -1,0 +1,9 @@
+div {
+    color: green;
+    font-size: 150%;
+    border: 1px  rgb(131, 167, 128);
+    border-radius: 10px;
+    width: 410px;
+    padding: 5px;
+   
+}

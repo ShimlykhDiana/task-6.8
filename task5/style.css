@@ -1,0 +1,15 @@
+button {
+    background: -moz-linear-gradient(#a7d6ba, #56b783, #aec3b0);
+    background: -webkit-gradient(linear, 0 0, 0  100%, from(#88b997), to(#506a4c), color-stop(0.5, #55b588));
+    border: 1px solid rgb(43, 55, 45);
+border-radius: 10px;
+font-style: oblique;
+}
+
+label {
+    color: #4e9365;
+}
+
+p {
+    color: #4e9365;
+}
