@@ -3,6 +3,14 @@ const trafficLightEl2 = document.querySelector('#trafficLight2');
 const trafficLightEl3 = document.querySelector('#trafficLight3');
 const allTrafficLights = document.querySelector('#allTrafficLights');
 
+function makeGreen() {
+    trafficLightEl1.style.background = ('green');
+    allTrafficLights.removeEventListener('click', makeGreen);
+    allTrafficLights.addEventListener('click', makeYellow);
+    trafficLightEl2.style.background = ('black');
+    trafficLightEl3.style.background = ('black');
+}
+
 function makeRed() {
     trafficLightEl3.style.background = ('red');
     allTrafficLights.removeEventListener('click', makeRed);
@@ -21,15 +29,9 @@ function makeYellow() {
 
 
 
-function makeGreen() {
-    trafficLightEl1.style.background = ('green');
-    allTrafficLights.removeEventListener('click', makeGreen);
-    allTrafficLights.addEventListener('click', makeYellow);
-    trafficLightEl2.style.background = ('black');
-    trafficLightEl3.style.background = ('black');
-}
+allTrafficLights.addEventListener('click', makeGreen);
 
-trafficLightEl1.addEventListener('click', makeGreen);
+
 
 
 // function makeBlack () {
